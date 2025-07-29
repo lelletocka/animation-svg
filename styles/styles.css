@@ -20,8 +20,34 @@ h1 {
 }
 
 
-
 .animate__animated.animate__flash {
     animation-duration: 1.3s;
     animation-iteration-count: infinite;
+}
+
+.letter-div {
+    position: relative;
+}
+
+.letter {
+    padding: 20px;   
+}
+
+.animated-line {
+    height: 8px;
+    width: 8px;
+    background-color: red;
+    position: relative;
+    animation-name: animated-line;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animated-line {
+    0% {top: 180px; left: 0px;}
+    
+    20% {top: 0px; left: 0px; }
+    50% {top: 0px; left: 230px;}
+    70% {top: 210px; left: 230px;}
+    100% {top: 210px; left: 0px;}
 }

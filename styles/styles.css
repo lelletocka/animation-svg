@@ -1,0 +1,26 @@
+body {
+    background-color: brown;
+}
+
+main {
+    background-color: antiquewhite;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+.animate__animated.animate__flash {
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}

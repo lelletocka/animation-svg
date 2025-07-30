@@ -25,21 +25,24 @@ h1 {
     animation-iteration-count: infinite;
 }
 
-.letter-div {
-    position: relative;
-}
+
 
 .letter {
     padding: 20px;   
+    transition: background-color 1s;
+}
+
+.letter:hover {
+    background-color: #ff0000;
 }
 
 .animated-line {
     height: 8px;
     width: 8px;
-    background-color: red;
+    background-color: #ff0000;
     position: relative;
     animation-name: animated-line;
-    animation-duration: 2s;
+    animation-duration: 0.8s;
     animation-iteration-count: infinite;
 }
 
@@ -50,4 +53,32 @@ h1 {
     50% {top: 0px; left: 230px;}
     70% {top: 210px; left: 230px;}
     100% {top: 210px; left: 0px;}
+}
+
+.hurry-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    animation-name: hurry;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: large;
+}
+
+.clock {
+    width: 50px;
+    height: 100%;
+}
+
+@keyframes hurry {
+    0% {color: black;}
+    50% {color: red;}
+    100% {color: black;}
 }
